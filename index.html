@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Автономна LED лампочка</title>
+    <meta name="description" content="Автономна LED лампочка з вбудованим акумулятором">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .main_wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .timer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .timer_container {
+            display: flex;
+            justify-content: center;
+        }
+        .timer_block {
+            margin: 0 10px;
+        }
+        .offer_section img {
+            width: 100%;
+            height: auto;
+        }
+        .price {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .old {
+            text-decoration: line-through;
+            color: #999;
+        }
+        .new {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .list1 {
+            padding-left: 20px;
+        }
+        .button-m {
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .characteristics_list2 {
+            padding: 0 20px;
+        }
+        .characteristic_item {
+            margin-bottom: 10px;
+        }
+        form input {
+            width: 80%;
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_wrapper">
+        <header>
+            <h1>Автономна LED лампочка</h1>
+        </header>
+        <div class="timer">
+            <p>До кінця акції залишилось:</p>
+            <div class="timer_container">
+                <div class="timer_block">
+                    <div class="count hours">09</div>
+                    <div class="text">годин</div>
+                </div>
+                <div class="timer_block">
+                    <div class="count minutes">39</div>
+                    <div class="text">хвилин</div>
+                </div>
+                <div class="timer_block">
+                    <div class="count seconds">58</div>
+                    <div class="text">секунд</div>
+                </div>
+            </div>
+        </div>
+        <div class="offer_section">
+            <img src="/api/placeholder/400/300" alt="Автономна LED лампочка">
+            <div class="price">
+                <div class="old">
+                    <span>599 грн.</span>
+                </div>
+                <div class="new">
+                    <span>299 грн.</span>
+                </div>
+            </div>
+            <ul class="list1">
+                <li>Працює від вбудованого акумулятора</li>
+                <li>До 8 годин автономної роботи</li>
+                <li>Яскраве LED освітлення</li>
+                <li>Компактний розмір</li>
+                <li>Легко заряджається через USB</li>
+                <li>Ідеально для кемпінгу та аварійних ситуацій</li>
+            </ul>
+            <a href="#order_form" class="button-m">Замовити зараз</a>
+        </div>
+        <section id="characteristic">
+            <h2>Характеристики</h2>
+            <div class="characteristics_list2">
+                <div class="characteristic_item">
+                    <div class="text">Потужність: 5 Вт</div>
+                </div>
+                <div class="characteristic_item">
+                    <div class="text">Яскравість: 450 люмен</div>
+                </div>
+                <div class="characteristic_item">
+                    <div class="text">Час роботи: до 8 годин</div>
+                </div>
+                <div class="characteristic_item">
+                    <div class="text">Час зарядки: 3-4 години</div>
+                </div>
+                <div class="characteristic_item">
+                    <div class="text">Тип цоколя: E27</div>
+                </div>
+            </div>
+        </section>
+        <section id="order_form">
+            <h2>Замовити зараз</h2>
+            <form action="order.php" method="post">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <button type="submit" class="button-m">Замовити</button>
+            </form>
+        </section>
+        <footer>
+            <p>© 2024 Автономні LED лампочки. Всі права захищені.</p>
+            <p><a href="privacy.html" style="color: white;">Політика конфіденційності</a></p>
+        </footer>
+    </div>
+</body>
+</html>
