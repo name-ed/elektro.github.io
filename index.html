@@ -118,6 +118,13 @@
         .step-text p {
             margin: 5px 0 0;
         }
+        .fullscreen-photo {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: cover;
+            display: block;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -142,18 +149,16 @@
                 </div>
             </div>
         </div>
+        
         <div class="offer_section">
             <img src="1.jpg" alt="Автономна LED лампочка">
             
-            <!-- Переміщений блок з ціною -->
             <div class="price">
                 <span>299 грн.</span>
             </div>
             
-            <!-- Додаткова кнопка "Замовити" -->
             <a href="#order_form" class="button-m">Замовити зараз</a>
             
-            <!-- Блок з інструкціями щодо замовлення -->
             <div class="order-steps">
                 <h2>Як зробити замовлення?</h2>
                 <div class="step">
@@ -185,6 +190,9 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Переміщений блок з повноекранним фото -->
+            <img src="22.jpg" alt="Повноекранне фото LED лампочки" class="fullscreen-photo">
             
             <ul class="list1">
                 <li>Працює від вбудованого акумулятора</li>
