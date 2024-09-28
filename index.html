@@ -43,12 +43,6 @@
         .price {
             text-align: center;
             margin: 20px 0;
-        }
-        .old {
-            text-decoration: line-through;
-            color: #999;
-        }
-        .new {
             font-size: 24px;
             font-weight: bold;
             color: #4CAF50;
@@ -151,7 +145,15 @@
         <div class="offer_section">
             <img src="1.jpg" alt="Автономна LED лампочка">
             
-            <!-- Новий блок з інструкціями щодо замовлення -->
+            <!-- Переміщений блок з ціною -->
+            <div class="price">
+                <span>299 грн.</span>
+            </div>
+            
+            <!-- Додаткова кнопка "Замовити" -->
+            <a href="#order_form" class="button-m">Замовити зараз</a>
+            
+            <!-- Блок з інструкціями щодо замовлення -->
             <div class="order-steps">
                 <h2>Як зробити замовлення?</h2>
                 <div class="step">
@@ -184,14 +186,6 @@
                 </div>
             </div>
             
-            <div class="price">
-                <div class="old">
-                    <span>599 грн.</span>
-                </div>
-                <div class="new">
-                    <span>299 грн.</span>
-                </div>
-            </div>
             <ul class="list1">
                 <li>Працює від вбудованого акумулятора</li>
                 <li>До 8 годин автономної роботи</li>
